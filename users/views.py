@@ -42,7 +42,10 @@ def profile(request):
 
 
 def home(request):
-	return render(request, 'users/base.html')
+	context = {
+		'title': 'home'
+	}
+	return render(request, 'users/home.html', context)
 
 
 
